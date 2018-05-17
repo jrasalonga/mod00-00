@@ -24,9 +24,19 @@
  * Sections
  * 
  */
+
 section#bio {
-	background-color: #0fb784;
+	background-color: 	#777777;
+	background-image: url(../img/pattern2.png);
+	background-attachment: fixed;
+	background-size: cover;
 	[position: relative;]
+}
+
+section#bio > div {
+	background-color: rgba(119, 119, 119 ,0.5);
+	width: 100%;
+	height: 100vh;
 }
 
 section#bio,
@@ -34,20 +44,49 @@ section#bio a {
 	color: #fff;
 }
 
-section#bio > img {
+section#bio > div > header > p {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+section#bio > div > header > p > a {
+	text-decoration: none;
+}
+section#bio > div > header > p > a:hover {
+	text-decoration: underline;
+	color: yellow
+}
+
+section#bio > div > header {
+	position: relative;
+}
+
+section#bio > div > header > p:last-child {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+}
+
+section#bio > div > div#details > img {
 	border-radius: 50%;
-	width: 200px;
-	border: 5px solid grey;
+	width: 250px;
+	border: 5px solid white;
 	padding: 2px
 }
 
-section#bio > h1,
-section#bio > ul {font-family: 'Luckiest Guy', cursive;	
+section#bio > div > h1,
+section#bio > div > ul {font-family: 'Roboto', sans-serif;	
 }
 
-section#bio > div#details	> ul {
+section#bio > div > div#details	> ul {
 	list-style: none;
 	font-size: 25px;
+}
+
+section#bio > div > div#details > p {
+	line-height: 1.5;
 }
 
 div#details	{
@@ -87,7 +126,7 @@ section#contact > h2 {
 
  body {
  	background-color: skyblue;
-	font-family: 'Bangers', cursive;
+	font-family: 'Roboto', sans-serif;
  	 }
 
 
